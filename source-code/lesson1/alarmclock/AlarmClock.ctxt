@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AlarmClock()
+comment1.params=
+comment1.target=int[]\ makeDelay()
+comment2.params=hours\ minutes\ seconds
+comment2.target=void\ delayAndCountTime(int,\ int,\ int)
+comment3.params=
+comment3.target=void\ ring()
+numComments=4

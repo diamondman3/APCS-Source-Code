@@ -1,0 +1,39 @@
+Class documentation
+<---- javadoc command: ---->
+c:\sun\sdk\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.5
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+C:\Users\maxwelljm19\Documents\alarmclock\doc
+-classpath
+C:\BlueJ\lib\bluejcore.jar;C:\BlueJ\lib\junit.jar;C:\Users\maxwelljm19\Documents\alarmclock
+C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java...
+C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java:12: ']' expected
+        int[3] totalTime=[0,0,0];
+            ^
+C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java:12: not a statement
+        int[3] totalTime=[0,0,0];
+           ^
+C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java:30: illegal start of expression
+        totalTime=[hours, minutes, seconds];
+                  ^
+C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java:34: ']' expected
+    public void delayAndSoundAlarm(int[3] totalTime){
+                                       ^
+C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java:41: <identifier> expected
+    int[3] delayTime= makeDelay();
+                                 ^
+C:\Users\maxwelljm19\Documents\alarmclock\AlarmClock.java:42: invalid method declaration; return type required
+    delayAndSoundAlarm();
+    ^
+6 errors
