@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Age
+comment0.text=\ Age1\r\n\ Ages\ between\ 13\ and\ 19,\ inclusive,\ are\ teenage\ years.\r\n\ \r\n\ Fill\ in\ the\ blank\ in\ the\ ageType()\ method\ so\ that\ ageType\ \r\n\ receives\ the\ correct\ results.\r\n
+comment1.params=
+comment1.target=void\ ageType()
+numComments=2

@@ -13,18 +13,19 @@ public class Age {
    // teenagers are between 13 and 19 inclusive...
    public void ageType(){
       //TEXT BOX:A1:9:20:1
-      if (                                 ) {
+      if (age<=19||age>=13) {
          ageType = "teenage";
       } else {
          ageType = "other";
       }
 
    }
+}
 
    //HIDDEN CODE START
 
    // no exception check, oh well.
-   public static String[] __TEST(String studentInputs) {
+ /*  public static String[] __TEST(String studentInputs) {
       Age obj=new Age();
       org.uccp.apcsa.BlueJExerciseTest t = new org.uccp.apcsa.BlueJExerciseTest(studentInputs);
       int a;
@@ -60,20 +61,20 @@ public class Age {
       return rtn;
    }
 
-   /** Return a random number in the range [min,max] inclusive */
+   // Return a random number in the range [min,max] inclusive
    public int __getAge(int min, int max) {
       return min + (int)(Math.random() * ((max - min) + 1));
    }
 
-   /* solution
+   // solution
 
           age <=13 && age >=19
 
-    */
+    
 
    //HIDDEN CODE END
-}
-/**
+}*/
+/*
  * BLUEJ EXERCISE
  * TEXTBOX:A1:16:1:11:42
  * ASSERTION:A1:parenBalanced:Your parentheses aren't balanced; this won't compile!
