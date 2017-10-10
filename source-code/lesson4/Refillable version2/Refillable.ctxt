@@ -1,12 +1,13 @@
 #BlueJ class context
-comment0.params=initialAmount
-comment0.target=Refillable(int)
-comment1.params=amount
-comment1.target=void\ useUp(int)
+comment0.target=Refillable
+comment1.params=initialAmount
+comment1.target=Refillable(int)
 comment2.params=amount
-comment2.target=void\ refill(int)
-comment3.params=
-comment3.target=int\ currentAmount()
+comment2.target=void\ useUp(int)
+comment3.params=amount
+comment3.target=void\ refill(int)
 comment4.params=
-comment4.target=int\ averageUse()
-numComments=5
+comment4.target=int\ currentAmount()
+comment5.params=
+comment5.target=int\ averageUse()
+numComments=6

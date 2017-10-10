@@ -16,9 +16,7 @@
     // Sets isLeapDay to true if monthNumber is equal to 2 and dateInMonth 
     // equals 29. Otherwise isLeapYear is set to false.
     public void setLeapDay() {
-            
-              
-       
+        isLeapDay=(monthNumber==2&&dateInMonth==29);
     }
     
 }
