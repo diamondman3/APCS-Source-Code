@@ -7,47 +7,46 @@
 public class Card {
    
    // the cards suit: either 0 (clubs), 1 (diamonds), 2 (hearts), or 3 (spades)
-   private int mySuit;
+   private int s;
    //myRank, a value between 2 and 14, inclusive
    // 11 represents a jack, 12 a queen, 13 a king, and 14 an ace (which is high).
-   private int myRank;
+   private int r;
    
    // the constructor
    public Card (int rank, int suit) {
       if (isLegalRank (rank)) {
-         myRank = rank;
+         r = rank;
       } else {
-         System.out.println ("Illegal rank: " + rank);
+         System.out.println ("Illegal rank: " + r);
       }
       if (isLegalSuit (suit)) {
-         mySuit = suit;
+         s = suit;
       } else {
-         System.out.println ("Illegal suit: " + suit);
+         System.out.println ("Illegal suit: " + s);
       }
    }
    
    public boolean outRanks(Card other) {
-      return this.myRank > other.rank();
+       return (r>other.getRank()||(r==other.getRank()&&s>other.getSuit()));
    }
    
    // returns 'true' if the rank of this card is legal, or false otherwise.
-   private boolean isLegalRank (int x) {
+   public boolean isLegalRank (int x) {
       return x >= 2 && x <= 14;
-      
    }
    
    // returns 'true' if the suit of this card is legal, or false otherwise.
-   private boolean isLegalSuit (int x) {
+   public boolean isLegalSuit (int x) {
       // you fill this in
         return x >= 0 && x <= 3;
    }
    
-   public int rank ( ) {
-      return myRank;
+   public int getRank ( ) {
+      return r;
    }
    
-   public int suit ( ) {
-      return mySuit;
+   public int getSuit ( ) {
+      return s;
    }
    
 }

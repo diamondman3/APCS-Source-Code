@@ -3,11 +3,18 @@
 
 public class Name {
 
-   private String myFirst;
-   private String myMiddle;
-   private String myLast;
+   private String myFirst="";
+   private String myMiddle="";
+   private String myLast="";
    
    // the constructor
+   public Name (String first) {
+      myFirst = caseFixed (first);
+   }
+   public Name (String first, String last) {
+      myFirst = caseFixed (first);
+      myLast = caseFixed (last);
+   }
    public Name (String first, String middle, String last) {
       myFirst = caseFixed (first);
       myMiddle = caseFixed (middle);
@@ -16,12 +23,24 @@ public class Name {
    
    // Return the name, arranged as 'last, first middle'.
    public String lastFirst ( ) {
-      return myLast + ", " + myFirst + " " + myMiddle;
+       if(myMiddle.equals("")){
+           if (myLast.equals("")){
+               return myFirst;
+           }
+           return myLast + ", " + myFirst;
+        }
+        return myLast + ", " + myFirst + " " + myMiddle;
    }
    
    // Return the name, arranged as 'first middle last'.
-   public String fullName ( ) {
-      return myFirst + " " + myMiddle + " " + myLast;
+   public String fullName ( ){
+       if(myMiddle.equals("")){
+           if (myLast.equals("")){
+               return myFirst;
+           }
+           return myFirst + " " + myLast;
+        }
+        return myFirst+ " " + myMiddle + " "+myLast;
    }
    
    // Return the result of "fixing" the given part of the name,

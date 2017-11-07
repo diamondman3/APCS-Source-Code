@@ -1,14 +1,16 @@
 #BlueJ class context
-comment0.params=rank\ suit
-comment0.target=Card(int,\ int)
-comment1.params=other
-comment1.target=boolean\ outRanks(Card)
-comment2.params=x
-comment2.target=boolean\ isLegalRank(int)
+comment0.target=Card
+comment0.text=\ Card\:\ \ a\ class\ that\ models\ a\ playing\ card,\ \r\n\ \ \ \ e.g.,\ an\ ace\ of\ spades\ or\ a\ seven\ of\ diamonds.\r\n\ \ \ \ \r\n\ \ \ \ You\ need\ to\ complete\ the\ isLegalRank\ and\ isLegalSuit\ methods.\r\n
+comment1.params=rank\ suit
+comment1.target=Card(int,\ int)
+comment2.params=other
+comment2.target=boolean\ outRanks(Card)
 comment3.params=x
-comment3.target=boolean\ isLegalSuit(int)
-comment4.params=
-comment4.target=int\ rank()
+comment3.target=boolean\ isLegalRank(int)
+comment4.params=x
+comment4.target=boolean\ isLegalSuit(int)
 comment5.params=
-comment5.target=int\ suit()
-numComments=6
+comment5.target=int\ getRank()
+comment6.params=
+comment6.target=int\ getSuit()
+numComments=7
